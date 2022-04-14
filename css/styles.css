@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 1.3rem;
+    width: 100vw;
+}
+
+:root {
+    --color-naranja: rgb(242, 95, 58);
+    --color-naranjaClaro: rgb(248, 144, 117);
+    --color-azul: rgb(35, 44, 81);
+    --color-gris: rgb(143, 148, 167);
+    --color-azulOscuro: rgb(29, 30, 37);
+    --color-blancoNaranga: rgb(255, 239, 234);
+    --color-blanco: rgb(249, 249, 249);
+    --color-blancoAnaran: rgb(253, 204, 193);
+}
+
+html{
+    font-size: 62.5%; /* 10px */
+}
+
+/* Banner */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+}
+
+.banner_menuDesktop, .banner__button {
+    display: none;
+}
+
+
+/* Introduction */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--color-gris);
+    font-weight: 500;
+}
+
+.intro_img {
+    background-image: url(../images/ilustration.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 300px;
+}
+
+.intro__start h1{
+    color: var(--color-azul);
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.intro__button {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    margin: 3rem 0 6rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.intro__button a{
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+.intro__button:hover {
+    background-color: var(--color-naranjaClaro);
+    transform: scale(1.1);
+}
+
+/* About Us */
+
+.aboutUs {
+    text-align: center;
+    color: var(--color-gris);
+    font-size: 1.3rem;
+}
+
+.aboutUs h2{
+    font-size: 2.5rem;
+    color: var(--color-azul);
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+.aboutUs__intro {
+    margin-bottom: 4rem;
+}
+
+.aboutUs__title {
+    background-color: var(--color-blancoNaranga);
+    border-radius: 5rem 0 0 5rem;
+    display: flex;
+    gap: 1rem;
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+.aboutUs__num {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    font-weight: 700;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+    padding: 0.8rem 2.4rem;
+}
+
+.aboutUs__titletext {
+    color: var(--color-azul);
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.aboutUs__list p{
+    margin: 1.5rem 0 3rem;
+    padding: 0 1.5rem;
+    text-align: justify;
+}
+
+/* Comments */
+
+.comments__1, .comments__3 {
+    display: none;
+}
+
+.comments {
+    text-align: center;
+    color: var(--color-gris);
+    padding: 2rem;
+}
+
+.comments h2{
+    color: var(--color-azul);
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.comments h3{
+    color: var(--color-azul);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.comments__button {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    margin: 3rem 0 6rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.comments__button a{
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+.comments__button:hover {
+    background-color: var(--color-naranjaClaro);
+    transform: scale(1.1);
+}
+
+/* Get Started */
+
+.start {
+    background-color: var(--color-naranja);
+    text-align: center;
+}
+
+.start__phrase h2{
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding: 6rem 4rem 2rem 4rem;
+}
+
+.start__button {
+    background-color: var(--color-blanco);
+    margin: 3rem 0 6rem 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.start__button:hover{
+    background-color: var(--color-blancoAnaran);
+    transform: scale(1.1);
+}
+
+.start__button a{
+    text-decoration: none;
+    color: var(--color-naranja);
+}
+
+/* Information */
+
+    /* Search Bar */
+
+footer{
+    background-color: var(--color-azulOscuro);
+}
+
+.info__mail{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem 4rem 1rem;
+    order: 1;
+}
+
+.info__mail fieldset{
+    border: none;
+}
+
+.info__email{
+    background-color: var(--color-blanco);
+    color: var(--color-gris);
+    padding: 1rem 2rem;
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    display: inline-block;
+    border: none;
+    margin-right: 1rem;
+}
+
+.info__button {
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    padding: 1rem 2rem;
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+    border-radius: 5rem;
+    display: inline-block;
+    border: none;
+    transition: all 0.5s;
+}
+
+.info__button:hover{
+    background-color: var(--color-naranjaClaro);
+    transform: scale(1.1);
+}
+
+    /* Navegation Menu */
+
+.info__menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 6rem 4rem 6rem;
+    justify-content: space-between;
+    color: var(--color-gris);
+    order: 2;
+}
+
+.info__menuI, .info__menuII{
+    list-style: none;
+    flex-direction: column;
+}
+
+.info__menu li{
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+
+}
+
+.info__menu a{
+    text-decoration: none;
+    color: var(--color-gris);
+}
+
+.info__menu a:hover{
+    color: var(--color-naranja);
+}
+
+/* Social Media */
+
+.media_links {
+    order: 3;
+}
+
+.media_links, .media_links i {
+    color: var(--color-blanco);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.media_links a{
+    font-size: 3rem;
+    text-decoration: none;
+}
+.media_links i:hover{
+    color: var(--color-naranja);
+}
+
+/* Logo */
+
+.info__logo {
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    order: 4;
+}
+
+/* Rights */
+
+.info__rights{
+    display: none;
+}
+
+.info__rightsMobile {
+    text-align: center;
+    color: var(--color-gris);
+    padding: 0 6rem 2rem 6rem;
+    order: 5;
+}
+
+
+
+/* Media Query (Desktop) */
+
+@media screen and (min-width: 800px) {
+
+    /* Banner */
+
+    .banner{
+        justify-content: space-around;
+    }
+
+    .banner__menuMobile, .info__rightsMobile {
+        display: none;
+    }
+
+    .banner_menuDesktop, .banner__button, .info__rights {
+        display: block;
+    }
+
+    .banner_menuDesktop ul, a{
+        color: var(--color-azul);
+        text-decoration: none;
+        display: flex;
+        font-size: 1.3rem;
+        font-weight: 500;
+        gap: 1rem;
+    }
+
+    .banner_menuDesktop a:hover{
+        color: var(--color-gris);
+    }
+
+    .banner__button{
+        background-color: var(--color-naranja);
+        color: var(--color-blanco);
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+        border-radius: 5rem;
+        box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.25);
+        transition: all 0.5s;
+    }
+
+    .banner__button:hover {
+        background-color: var(--color-naranjaClaro);
+        transform: scale(1.1);
+    }
+
+    .banner__button a {
+        text-decoration: none;
+        color: var(--color-blanco);
+    }
+
+    .banner__button a:hover {
+        color: var(--color-blanco);
+    }
+
+
+    /* Introduction */
+
+    .intro {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 5rem 16rem;
+        text-align: left;
+    }
+
+    .intro__start {
+        width: 50vw;
+        height: 500px;
+    }
+
+    .intro__start h1{
+        font-size: 5.8rem;
+        font-weight: 700;
+    }
+
+    .intro__start p{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--color-azulOscuro);
+    }
+
+    .intro_img {
+        width: 50vw;
+        height: 500px;
+    }
+
+    .intro__button {
+        font-size:  1.3rem;
+        font-weight: 500;
+    }
+
+    /* About Us */
+
+    .aboutUs { 
+        display: flex;
+        padding: 0 16.5rem;
+    }
+
+    .aboutUs__intro { 
+        width: 50vw;
+        text-align: left;
+    }
+
+    .aboutUs__intro h2{ 
+        font-size: 3.6rem;
+        font-weight: 700;
+    }
+
+    .aboutUs__intro p{ 
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--color-azulOscuro);
+    }
+
+    .aboutUs__list { 
+        width: 50vw;
+        font-size: 1.6rem;
+    }
+
+    .aboutUs__title {
+        background-color: white;
+    }
+
+    /* Comments */
+
+    .comments__1, .comments__3 {
+        display: block;
+    }
+
+    .comments h2 {
+        font-size: 4rem;
+    }
+
+    .comments__users {
+        background-color: var(--color-blanco);
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        margin: 3rem;
+        
+    }
+    
+    .comments__1,.comments__2,.comments__3 {
+        padding: 3rem;
+    }
+
+    /* Get Started */
+
+    .start {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 10rem;
+    }
+
+    .start__phrase{
+    
+    }
+
+    .start__button {
+        align-content: flex-end;
+        margin: auto;
+    }
+
+    /* Information */
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        padding: 5rem;
+    }
+
+    .info__rights {
+        text-align: center;
+        color: var(--color-gris);
+        padding: 0 6rem 2rem 6rem;  
+    }
+
+    .info__mediaLogo {
+        order: 1;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .info__logo{
+        padding: 0 0 6rem;
+    }
+
+    .media a{
+        font-size: 2rem;
+    }
+
+    .info__menu {
+        order: 2;
+    }
+
+    .info__menuI, .info__menuII{
+        padding: 4rem;
+    }
+
+    .info__mailRights {
+        order: 3;
+    }
+
+}
